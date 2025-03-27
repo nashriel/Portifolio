@@ -6,18 +6,14 @@ import {
 import { CTA } from "../components";
 import { experiences, skills } from "../constants";
 
-
 import "react-vertical-timeline-component/style.min.css";
-
-
 
 const About = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        Hello, I'm{" "}
+        Hello, I&apos;m{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
-          {" "}
           Ashriel
         </span>{" "}
         👋
@@ -25,8 +21,8 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Gujarat India, specializing in artificial
-          Intelligence through hands-on learning and building applications.
+          Software Engineer based in Gujarat, India, specializing in artificial
+          intelligence through hands-on learning and building applications.
         </p>
       </div>
 
@@ -34,8 +30,8 @@ const About = () => {
         <h3 className='subhead-text'>My Skills</h3>
 
         <div className='mt-16 flex flex-wrap gap-12'>
-          {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
+          {skills.map((skill, index) => (
+            <div className='block-container w-20 h-20' key={index}>
               <div className='btn-back rounded-xl' />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
@@ -50,11 +46,11 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Work Experience</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of projects, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            I&apos;ve worked with all sorts of projects, leveling up my skills
+            and teaming up with smart people. Here&apos;s the rundown:
           </p>
         </div>
 
@@ -62,22 +58,20 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
-                key={experience.company_name}
+                key={index}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
                 icon={
                   <div className='flex justify-center items-center w-full h-full'>
-{/*                     <img
+                    <img
                       src={experience.icon}
                       alt={experience.company_name}
                       className='w-[60%] h-[60%] object-contain'
-                    /> */}
+                    />
                   </div>
                 }
                 contentStyle={{
-                  borderBottom: "8px",
-                  borderStyle: "solid",
-                  borderBottomColor: experience.iconBg,
+                  borderBottom: "8px solid " + experience.iconBg,
                   boxShadow: "none",
                 }}
               >
@@ -94,9 +88,9 @@ const About = () => {
                 </div>
 
                 <ul className='my-5 list-disc ml-5 space-y-2'>
-                  {experience.points.map((point, index) => (
+                  {experience.points.map((point, idx) => (
                     <li
-                      key={`experience-point-${index}`}
+                      key={`experience-point-${idx}`}
                       className='text-black-500/50 font-normal pl-1 text-sm'
                     >
                       {point}
@@ -113,13 +107,11 @@ const About = () => {
         <h3 className='subhead-text'>My Resume</h3>
 
         <div className='mt-16 flex flex-wrap gap-12'>
-        
-        <iframe
-            src="./AshrielNhembo_Resume.pdf"
+          <iframe
+            src="/AshrielNhembo_Resume.pdf"
             className="w-full h-[90vh]"
             title="Resume"
           />
-
         </div>
       </div>
 

@@ -50,12 +50,8 @@ const Contact = () => {
           setTimeout(() => {
             hideAlert(false);
             setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
+            setForm({ name: "", email: "", message: "" });
+          }, 3000);
         },
         (error) => {
           setLoading(false);
@@ -72,24 +68,24 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className="relative flex lg:flex-row flex-col max-container">
       {alert.show && <Alert {...alert} />}
 
-      <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>Get in Touch</h1>
+      <div className="flex-1 min-w-[50%] flex flex-col">
+        <h1 className="head-text">Get in Touch</h1>
 
-        {/* <form
+        <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='w-full flex flex-col gap-7 mt-14'
+          className="w-full flex flex-col gap-7 mt-14"
         >
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Name
             <input
-              type='text'
-              name='name'
-              className='input'
-              placeholder='John'
+              type="text"
+              name="name"
+              className="input"
+              placeholder="John"
               required
               value={form.name}
               onChange={handleChange}
@@ -97,13 +93,13 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Email
             <input
-              type='email'
-              name='email'
-              className='input'
-              placeholder='John@gmail.com'
+              type="email"
+              name="email"
+              className="input"
+              placeholder="John@gmail.com"
               required
               value={form.email}
               onChange={handleChange}
@@ -111,13 +107,13 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Your Message
             <textarea
-              name='message'
-              rows='4'
-              className='textarea'
-              placeholder='Write your thoughts here...'
+              name="message"
+              rows="4"
+              className="textarea"
+              placeholder="Write your thoughts here..."
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -126,23 +122,40 @@ const Contact = () => {
           </label>
 
           <button
-            type='submit'
+            type="submit"
             disabled={loading}
-            className='btn'
+            className="btn"
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
             {loading ? "Sending..." : "Submit"}
           </button>
-        </form> */}
-        <p className="text-black-500 font-semibold mt-20 text-[#2196f3]" >Email : <a href="mailto:ashrielnhembo.dev@gmail.com">ashrielnhembo.dev@gmail.com</a></p>
-        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">LinkedIn : <a href="https://www.linkedin.com/in/ashrielnhembo/">https://www.linkedin.com/in/ashrielnhembo-1b5b2a205</a></p>
-        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">Github : <a href="https://github.com/nashriel">https://github.com/nashriel</a></p>
-        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">Mobile : +91-7265029202 ( available on Call and Whatsapp ) </p>
-        
+        </form>
+
+        <p className="text-black-500 font-semibold mt-20 text-[#2196f3]">
+          Email:{" "}
+          <a href="mailto:ashrielnhembo.dev@gmail.com">
+            ashrielnhembo.dev@gmail.com
+          </a>
+        </p>
+        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">
+          LinkedIn:{" "}
+          <a href="https://www.linkedin.com/in/ashrielnhembo/">
+            https://www.linkedin.com/in/ashrielnhembo
+          </a>
+        </p>
+        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">
+          GitHub:{" "}
+          <a href="https://github.com/nashriel">
+            https://github.com/nashriel
+          </a>
+        </p>
+        <p className="text-black-500 font-semibold mt-5 text-[#2196f3]">
+          Mobile: +91-7265029202 (Available on Call & WhatsApp)
+        </p>
       </div>
 
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+      <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
         <Canvas
           camera={{
             position: [0, 0, 5],
@@ -151,10 +164,19 @@ const Contact = () => {
             far: 1000,
           }}
         >
-          <directionalLight position={[0, 0, 1]} intensity={2.5} />
-          <ambientLight intensity={1} />
-          <pointLight position={[5, 10, 0]} intensity={2} />
+          <directionalLight
+            suppressHydrationWarning
+            position={[0, 0, 1]}
+            intensity={2.5}
+          />
+          <ambientLight suppressHydrationWarning intensity={1} />
+          <pointLight
+            suppressHydrationWarning
+            position={[5, 10, 0]}
+            intensity={2}
+          />
           <spotLight
+            suppressHydrationWarning
             position={[10, 10, 10]}
             angle={0.15}
             penumbra={1}
