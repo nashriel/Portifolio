@@ -114,11 +114,12 @@ const About = () => {
 
         <div className='mt-16 flex flex-wrap gap-12'>
         
-          <iframe
-            src="./AshrielNhembo_Resume_Resume.pdf"
+        <iframe
+            src="./AshrielNhembo_Resume.pdf"
             className="w-full h-[90vh]"
             title="Resume"
           />
+
         </div>
       </div>
 
