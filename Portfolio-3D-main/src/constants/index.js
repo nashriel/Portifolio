@@ -172,62 +172,49 @@ export const socialLinks = [
 ];
 
 export const projects = [
+     {
+        iconUrl: pricewise,
+        theme: 'btn-back-red',
+        name: 'axi - Artificial Expense IntelligenceTracker',
+        description: ['An Artificial intelligence expense project that predicts the expenses of a user based on their previous spending habits.','It uses a machine learning model to predict the expenses and then provides a detailed analysis of the spending habits of the user.','The project is built using Django,Html, SQLAlcchemy, Javascript.'],
+        link: 'https://github.com/nashriel/axi',
+    },
+   
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Movie Review Application - Java Fullstack Project.',
-        description: ['Developed a full-stack application for browsing movies and viewing reviews using React.js and Java + Spring Boot.', 'Utilized MongoDB for database management and implemented CRUD operations via REST APIs.','Ensured code reliability by integrating unit tests with JUnit'],
-        // description: '# Developed a full-stack application for browsing movies and viewing reviews using React.js and Java + Spring Boot.\n Utilized MongoDB for database management and implemented CRUD operations via REST APIs.\n Ensured code reliability by integrating unit tests with JUnit',
-        link: 'https://github.com/trojan1771/Movies-and-Reviews---Backend',
+        name: 'Uniconfesi  - MERN stack Project.',
+        description: ['An online platform for students to share their experiences and reviews about their universities.','The project is built using React, Node.js, Express, MongoDB, and Tailwind CSS.','It allows users to create an account, post reviews, and interact with other users.Still in development phase'],
+        link: 'https://github.com/nashriel/uniconfesi',
     },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'A Collaborative interface design tool - Frontend Project.',
-        description: ['A collaborative graphics design too with real-world features like live cursor chat, comments, reactions, and drawing designs (shapes, image upload) on the canvas','Tech stack : Next.js 14, Fabric.js, and Liveblocks'],
-        link: 'https://figma-clone-dun-five.vercel.app/',
-    },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Sociopedia - MERN stack Project.',
-        description: ['Full stack based Social Networking website using MERN stack.','Implements features like ”Add friend”, ”Remove friend”, ”Like”, ”Comment”, ”Upload a Post”, ”Delete a post”','Upload image while signing up and various other functionalities using different Data structures'],
-        link: 'https://drive.google.com/file/d/1DSX59VsReU-Wag45R_Y1-aGCNaQ8dkk0/view?usp=sharing',
-    },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Disney+ clone',
-        description: ['A Pixel Perfect clone of Disney+ website showcasing my reactjs and tailwind css skills','SignIn implemented using Firebase.'],
-        link: 'https://drive.google.com/file/d/1I7KSCDxOK2_DDFbE-yMK4Tvy7KHRv6mK/view?usp=sharing',
-    },
+   
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'This Portfolio Website',
         description: ['An interactive 3D website designed to showcase my skills, projects and experiences to someone interested in hiring me.','Includes a Home, About and Prrojects page.','Tech stack : Reactjs, GSAP, ThreeJs'],
-        link: 'https://github.com/trojan1771/Portfolio-3D',
+        link: 'https://github.com/nashriel/Portifolio',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Single Input face Recognition system',
         description: ['An awesome ML model which provides facial recognition using a single image input with names stored in cache','Upto 87% accuracy','Uses advanced face landmark estimation','By identifying 68 specific points on each face, we normalize facial orientations, making it simpler for the computer to process'],
-        link: 'https://github.com/trojan1771/face_recog_login_system',
+        link: 'https://github.com/nashriel/face_recog_login_system',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Automatic Licence plate detection',
-        description: ['Upto 80% Accuracy'],
-        link: 'https://github.com/trojan1771/Automatic-licence-plate-detection',
+        description: ['Upto 80% Accuracy' ,'This project is a computer vision-based system that automatically detects and recognizes license plates from images or video streams.','It uses advanced image processing techniques and machine learning algorithms to accurately identify license plates, even in challenging conditions such as low light or occlusion.'],
+        link: 'https://github.com/nashriel/Automatic-licence-plate-detection',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Pneumonia Detection website',
-        description: ['Upto 76% Accuracy'],
-        link: 'https://github.com/trojan1771/Pneumonia-detection-website',
+        description: ['Upto 76% Accuracy' ,'This project is a web-based application that uses machine learning algorithms to detect pneumonia from chest X-ray images.','It provides a user-friendly interface for uploading images and receiving predictions, making it accessible to healthcare professionals and researchers.'],
+        link: 'https://github.com/nashriel/Pneumonia-detection-website',
     },
     {
         iconUrl: pricewise,
@@ -236,39 +223,13 @@ export const projects = [
         description: ['I have developed a multi language online IDE from scratch. I have used HTML, CSS and jQuery for UI side devlopment and design. In the server side, I have used PHP, just to keep things as simple as possible.'],
         link: 'https://github.com/trojan1771/Online-IDE-',
     },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Sales Insight - Power BI',
-        description: ['A Data Science project that includes cleaning and adjustment of raw sql data and then creation of an informative UI using PowerBI for both desktop and mobile views'],
-        link: 'https://github.com/trojan1771/Sales-Insight',
-    },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Personal finance dashboard - Power BI',
-        description: ['This repository contains a comprehensive personal finance dashboard built using Microsoft Power BI. Take control of your finances by visualizing and analyzing your income, expenses, savings, and investments in an interactive and intuitive way.'],
-        link: 'https://github.com/trojan1771/Personal-finance-Dashboard',
-    },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'ChetChat - Real time chat app',
-        description: ['Real time chat app using MERN stack and Socekt.io'],
-        link: 'https://github.com/trojan1771/rtca',
-    },
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'File compressor',
-        description: ['A Real application based on Huffman encoding implemented using c++'],
-        link: 'https://github.com/trojan1771/Compressor-App-c--',
-    },
+   
+       
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Delhi metro helper',
         description: ['A Djkstra algorithm based code which works with the data of Delhi metro connections and provides you the fastest routes either based on time or cost of travel'],
-        link: 'https://github.com/trojan1771/Metro-app',
+        link: 'https://github.com/nashriel/Metro-app',
     },
 ];
